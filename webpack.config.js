@@ -1,9 +1,19 @@
 const path = require("path")
 const CopyPlugin = require("copy-webpack-plugin")
+const HtmlPlugin = require("html-webpack-plugin")
 
 module.exports = {
   mode: "development",
-  entry: "./src/test.tsx",
+  entry: {
+    about: path.resolve("./src/about/About.tsx"),
+    app: path.resolve("./src/app/App.tsx"),
+    contact: path.resolve("./src/contact/Contact.tsx"),
+    experience: path.resolve("./src/experience/Experience.tsx"),
+    footer: path.resolve("./src/footer/Footer.tsx"),
+    header: path.resolve("./src/header/Header.tsx"),
+    nav: path.resolve("./src/nav/Nav.tsx"),
+    portfolio: path.resolve("./src/portfolio/Portfolio.tsx"),
+  },
   module: {
     rules: [
       {
@@ -21,11 +31,13 @@ module.exports = {
       },
     ],
   },
+  devtool: "eval-source-map",
+  watch: true,
   resolve: {
-    extensions: ["tsx", ".ts"],
+    extensions: [".tsx", ".ts", ".js", "json"],
   },
   output: {
-    filename: "index.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
   },
   plugins: [
@@ -37,5 +49,20 @@ module.exports = {
         },
       ],
     }),
+    new HtmlPlugin({
+      title: "Aaron Tran's Portfolio Website",
+      inject: "body",
+    }),
   ],
+}
+
+function getHtmlPlugins(chunks) {
+  return chunks.map(
+    (chunk) =>
+      new HtmlPlugin({
+        title: "Aaron Tran's Portfolio Website",
+        filename: `${chunk}.html`,
+        chunks: [chunk],
+      })
+  )
 }
