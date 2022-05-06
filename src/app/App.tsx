@@ -13,12 +13,12 @@ const App: React.FC<{}> = ({}) => {
   return (
     <>
       <Header />
+      <Nav />
       <Portfolio />
       <About />
       <Experience />
       <Footer />
       <Contact />
-      <Nav />
     </>
   )
 }

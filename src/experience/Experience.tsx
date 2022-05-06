@@ -2,7 +2,7 @@ import React from "react"
 import "./experience.css"
 
 const Experience: React.FC<{}> = ({}) => {
-  return <div>Experience</div>
+  return <section id="experience">Experience</section>
 }
 
 export default Experience

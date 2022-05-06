@@ -2,7 +2,7 @@ import React from "react"
 import "./contact.css"
 
 const Contact: React.FC<{}> = ({}) => {
-  return <div>Contact Me</div>
+  return <section id="contact">Contact Me</section>
 }
 
 export default Contact

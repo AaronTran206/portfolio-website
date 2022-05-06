@@ -1,10 +1,8 @@
-import React from 'react'
-import './portfolio.css'
+import React from "react"
+import "./portfolio.css"
 
-const Portfolio:React.FC<{}> = ({}) => {
-    return (
-        <div>Portfolio</div>
-    )
+const Portfolio: React.FC<{}> = ({}) => {
+  return <section id="portfolio">Portfolio</section>
 }
 
 export default Portfolio

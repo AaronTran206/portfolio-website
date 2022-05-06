@@ -32,7 +32,6 @@ module.exports = {
     ],
   },
   devtool: "eval-source-map",
-  watch: true,
   resolve: {
     extensions: [".tsx", ".ts", ".js", "json"],
   },
@@ -54,15 +53,4 @@ module.exports = {
       inject: "body",
     }),
   ],
-}
-
-function getHtmlPlugins(chunks) {
-  return chunks.map(
-    (chunk) =>
-      new HtmlPlugin({
-        title: "Aaron Tran's Portfolio Website",
-        filename: `${chunk}.html`,
-        chunks: [chunk],
-      })
-  )
 }
