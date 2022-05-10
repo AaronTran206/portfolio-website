@@ -1,5 +1,5 @@
 import React from "react"
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import "./nav.css"
 import {
   HiOutlineHome,
@@ -13,7 +13,22 @@ import { FiThumbsUp } from "react-icons/fi"
 
 const Nav: React.FC<{}> = ({}) => {
   const [activeNav, setActiveNav] = useState<string>("#")
+  const ref = useRef()
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+          console.log("working")
+        }
+      },
+      { root: null, rootMargin: "0px", threshold: 0.1 }
+    )
+    if (ref.current) {
+      observer.observe(ref.current)
+    }
+  }, [ref])
   return (
     <nav>
       <a
