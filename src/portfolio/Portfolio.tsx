@@ -35,7 +35,7 @@ const data = [
 
 const Portfolio: React.FC<{}> = ({}) => {
   return (
-    <section id="portfolio">
+    <section id="portfolio" className={"portfolio"}>
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 

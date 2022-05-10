@@ -1,3 +1,14 @@
+.testimonials {
+  opacity: 0;
+  transition: var(--transition);
+  transform: translateY(20%);
+}
+
+.testimonials.appear {
+  opacity: 1;
+  transform: translate(0);
+}
+
 .container.testimonials__container {
   width: 50%;
   padding-bottom: 2.5rem;
@@ -17,7 +28,7 @@
   border: 0.4rem solid var(--color-primary);
 }
 
-.testimonials {
+.testimonials-swiper {
   background: var(--color-bg-variant);
   text-align: center;
   padding: 2rem;

@@ -1,3 +1,14 @@
+.services {
+  opacity: 0;
+  transition: var(--transition);
+  transform: translateY(20%);
+}
+
+.services.appear {
+  opacity: 1;
+  transform: translate(0);
+}
+
 .services__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

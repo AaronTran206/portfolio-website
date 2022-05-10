@@ -1,3 +1,14 @@
+.about {
+  opacity: 0;
+  transition: var(--transition);
+  transform: translateY(20%);
+}
+
+.about.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;

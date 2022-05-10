@@ -5,7 +5,7 @@ import { MdPets } from "react-icons/md"
 
 const About: React.FC<{}> = ({}) => {
   return (
-    <section id="about">
+    <section id="about" className={"about"}>
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
@@ -37,13 +37,13 @@ const About: React.FC<{}> = ({}) => {
             </article>
           </div>
           <p className="about__content">
-            My journey as an Olympic-level athlete helped me to develop many
-            skills and values needed to be successful within a professional
-            team. My experience with Team USA for seven years allowed me to gain
-            strong interpersonal and communication skills when working with some
-            of the brightest and most dedicated people in the country. However,
-            life is too short. I believe that it is just as important to "stop
-            and smell the roses" as it is to spend time honing your craft.
+            My experience as an Olympic-level athlete allowed me to gain strong
+            interpersonal and communication skills when working with some of the
+            brightest and most dedicated people in the country; which also
+            allows me to thrive in a professional environment. However, I also
+            believe that life is too short. I believe that it is just as
+            important to "stop and smell the roses" as it is to spend time
+            honing your craft.
           </p>
 
           <a href="#contact" className="btn btn-primary">

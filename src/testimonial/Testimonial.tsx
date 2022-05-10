@@ -46,7 +46,7 @@ const Testimonial: React.FC<{}> = ({}) => {
   ]
 
   return (
-    <section id="testimonials">
+    <section id="testimonials" className={"testimonials"}>
       <h5>Review from Colleagues and Managers</h5>
       <h2>Testimonials</h2>
       <Swiper
@@ -60,7 +60,7 @@ const Testimonial: React.FC<{}> = ({}) => {
         className="container testimonials__container"
       >
         {data.map((user, i) => (
-          <SwiperSlide className="testimonials" key={i}>
+          <SwiperSlide className="testimonials-swiper" key={i}>
             <div className="client__avatar">
               <a href={user.linkedin} target="_blank">
                 <img src={user.picture} />

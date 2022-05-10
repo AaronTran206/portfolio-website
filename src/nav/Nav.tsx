@@ -24,19 +24,24 @@ const Nav: React.FC<{}> = ({}) => {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        for (let entry of entries) {
+        entries.forEach((entry) => {
           //if 90% of the section is visible defined below
-          if (entry.isIntersecting) {
+          //guard clause
+          if (!entry.isIntersecting) {
+            return
+          } else {
             //update the active state to the visible section
-            console.log(`#${entry.target.id}`)
+            entry.target.classList.add("appear")
+
+            // console.log(entry.target.classList)
             setActiveNav(`#${entry.target.id}`)
             observer.unobserve(entry.target)
           }
-        }
+        })
         //root property defaults to the browser viewport
         //intersection ratio (90% of section must be visible)
       },
-      { threshold: 0.9 }
+      { threshold: 0.9, rootMargin: "0px 0px 200px 0px" }
     )
 
     refs.forEach((ref) => {

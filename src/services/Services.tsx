@@ -19,7 +19,7 @@ const backendData = [
 
 const Services: React.FC<{}> = ({}) => {
   return (
-    <section id="services">
+    <section id="services" className={"services"}>
       <h5>What I Offer</h5>
       <h2>Services</h2>
 

@@ -3,11 +3,31 @@ header {
   padding-top: 7rem;
   overflow: hidden;
 }
+h5 {
+  color: var(--color-light);
+}
+
+.header__text {
+  user-select: none;
+}
 
 .header__container {
   text-align: center;
   height: 100%;
   position: relative;
+  animation: anim4 1.5s forwards;
+}
+
+@keyframes anim4 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*========= CTA ========= */
@@ -25,15 +45,30 @@ header {
   align-items: center;
   gap: 0.8rem;
   position: absolute;
-  left: 0rem;
   bottom: 3rem;
+  animation: anim 2.5s forwards;
 }
 
 .header__socials::after {
   content: "";
+  left: 0rem;
   width: 1px;
   height: 2rem;
   background-color: var(--color-primary);
+}
+
+@keyframes anim {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
 }
 
 /*========= Profile Picture ========= */
@@ -48,11 +83,26 @@ header {
   border-radius: 12rem 12rem 0 0;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
   overflow: hidden;
+  animation: anim2 2s forwards;
 }
 
 .me img {
   position: relative;
   top: 3rem;
+}
+
+@keyframes anim2 {
+  0% {
+    bottom: -100%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    bottom: 0%;
+    opacity: 1;
+  }
 }
 
 /*========= Profile Picture ========= */
@@ -63,6 +113,21 @@ header {
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
+  animation: anim3 2.5s forwards;
+}
+
+@keyframes anim3 {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    right: 0%;
+    opacity: 1;
+  }
 }
 
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) ============== */
