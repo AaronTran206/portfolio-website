@@ -14,7 +14,7 @@
   --color-bg: #10263b;
   --color-bg-variant: #29537a;
   --color-primary: #27faef;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-primary-variant: rgb(60, 146, 207);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.548);
 
@@ -59,7 +59,7 @@ h1 {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 8rem;
 }
 

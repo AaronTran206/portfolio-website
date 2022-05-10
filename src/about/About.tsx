@@ -32,7 +32,7 @@ const About: React.FC<{}> = ({}) => {
             </article>
             <article className="about__card">
               <FaVolleyballBall className="about__icon" />
-              <h5>Hobbies</h5>
+              <h5>Hobby</h5>
               <small>Volleyball</small>
             </article>
           </div>
@@ -42,8 +42,8 @@ const About: React.FC<{}> = ({}) => {
             team. My experience with Team USA for seven years allowed me to gain
             strong interpersonal and communication skills when working with some
             of the brightest and most dedicated people in the country. However,
-            life is too short. I believe that it is important to "stop and smell
-            the roses" as well as spend time honing your craft.
+            life is too short. I believe that it is just as important to "stop
+            and smell the roses" as it is to spend time honing your craft.
           </p>
 
           <a href="#contact" className="btn btn-primary">

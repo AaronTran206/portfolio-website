@@ -3,6 +3,20 @@ import "./header.css"
 import CTA from "./CTA"
 import HeaderSocials from "./HeaderSocials"
 
+// const getHeaderLetters = (
+//   string1: string,
+//   string2: string,
+//   string3: string
+// ) => {
+//   const updatedStr1 = [...string1].map((letter) => <h5>letter</h5>)
+//   const updatedStr2 = [...string2].map((letter) => <h1>letter</h1>)
+//   const updatedStr3 = [...string3].map((letter) => (
+//     <h5 className="text-light">letter</h5>
+//   ))
+// }
+
+// getHeaderLetters(`Hello I'm`, `Aaron Tran`, `Frontend Developer`)
+
 const Header: React.FC<{}> = ({}) => {
   return (
     <header>

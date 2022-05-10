@@ -9,6 +9,8 @@ import {
   HiOutlineMail,
 } from "react-icons/hi"
 
+import { FiThumbsUp } from "react-icons/fi"
+
 const Nav: React.FC<{}> = ({}) => {
   const [activeNav, setActiveNav] = useState<string>("#")
 
@@ -29,6 +31,13 @@ const Nav: React.FC<{}> = ({}) => {
         <HiOutlineBookOpen />
       </a>
       <a
+        href="#services"
+        onClick={() => setActiveNav("#services")}
+        className={activeNav === "#services" ? "active" : ""}
+      >
+        <HiOutlineBriefcase />
+      </a>
+      <a
         href="#about"
         onClick={() => setActiveNav("#about")}
         className={activeNav === "#about" ? "active" : ""}
@@ -36,12 +45,13 @@ const Nav: React.FC<{}> = ({}) => {
         <HiOutlineUser />
       </a>
       <a
-        href="#experience"
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
+        href="#testimonials"
+        onClick={() => setActiveNav("#testimonials")}
+        className={activeNav === "#testimonials" ? "active" : ""}
       >
-        <HiOutlineBriefcase />
+        <FiThumbsUp />
       </a>
+
       <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}

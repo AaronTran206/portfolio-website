@@ -8,11 +8,12 @@ module.exports = {
     about: path.resolve("./src/about/About.tsx"),
     app: path.resolve("./src/app/App.tsx"),
     contact: path.resolve("./src/contact/Contact.tsx"),
-    experience: path.resolve("./src/experience/Experience.tsx"),
+    services: path.resolve("./src/services/Services.tsx"),
     footer: path.resolve("./src/footer/Footer.tsx"),
     header: path.resolve("./src/header/Header.tsx"),
     nav: path.resolve("./src/nav/Nav.tsx"),
     portfolio: path.resolve("./src/portfolio/Portfolio.tsx"),
+    testimonial: path.resolve("./src/testimonial/Testimonial.tsx"),
   },
   module: {
     rules: [

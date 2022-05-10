@@ -4,8 +4,9 @@ import "./app.css"
 import Nav from "../nav/Nav"
 import Header from "../header/Header"
 import Portfolio from "../portfolio/Portfolio"
+import Services from "../services/Services"
 import About from "../about/About"
-import Experience from "../experience/Experience"
+import Testimonial from "../testimonial/Testimonial"
 import Footer from "../footer/Footer"
 import Contact from "../contact/Contact"
 
@@ -15,8 +16,9 @@ const App: React.FC<{}> = ({}) => {
       <Header />
       <Nav />
       <Portfolio />
+      <Services />
       <About />
-      <Experience />
+      <Testimonial />
       <Footer />
       <Contact />
     </>
