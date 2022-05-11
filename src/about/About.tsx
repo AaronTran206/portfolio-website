@@ -38,12 +38,12 @@ const About: React.FC<{}> = ({}) => {
           </div>
           <p className="about__content">
             My experience as an Olympic-level athlete allowed me to gain strong
-            interpersonal and communication skills when working with some of the
-            brightest and most dedicated people in the country; which also
-            allows me to thrive in a professional environment. However, I also
-            believe that life is too short. I believe that it is just as
-            important to "stop and smell the roses" as it is to spend time
-            honing your craft.
+            interpersonal communication and goal-setting skills when working
+            with some of the brightest and most dedicated people in the country;
+            which also allows me to thrive in a professional environment.
+            However, I also believe that life is too short. I believe that it is
+            just as important to "stop and smell the roses" as it is to spend
+            time honing your craft.
           </p>
 
           <a href="#contact" className="btn btn-primary">
