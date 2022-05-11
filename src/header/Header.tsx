@@ -18,40 +18,6 @@ import HeaderSocials from "./HeaderSocials"
 // getHeaderLetters(`Hello I'm`, `Aaron Tran`, `Frontend Developer`)
 
 const Header: React.FC<{}> = ({}) => {
-  const refs = []
-
-  useEffect(() => {
-    //get header elements
-    const me = document.querySelector(".me")
-    const headerContainer = document.querySelector("header")
-    const headerSocials = document.querySelector(".header__socials")
-    const scrollDown = document.querySelector(".scroll__down")
-    //push into empty refs array
-    // refs.push(me)
-    refs.push(headerContainer)
-    // refs.push(headerSocials)
-    // refs.push(scrollDown)
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return
-          } else {
-            console.log(entry.target.classList)
-            entry.target.classList.add("appear")
-            console.log(entry.target.classList)
-            observer.unobserve(entry.target)
-          }
-        })
-      },
-      { threshold: 0 }
-    )
-    refs.forEach((ref) => {
-      observer.observe(ref)
-    })
-  })
-
   return (
     <header>
       <div className="container header__container">

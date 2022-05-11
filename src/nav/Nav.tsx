@@ -32,8 +32,6 @@ const Nav: React.FC<{}> = ({}) => {
           } else {
             //update the active state to the visible section
             entry.target.classList.add("appear")
-
-            // console.log(entry.target.classList)
             setActiveNav(`#${entry.target.id}`)
             observer.unobserve(entry.target)
           }
@@ -41,14 +39,14 @@ const Nav: React.FC<{}> = ({}) => {
         //root property defaults to the browser viewport
         //intersection ratio (90% of section must be visible)
       },
-      { threshold: 0.9, rootMargin: "0px 0px 200px 0px" }
+      { threshold: 0, rootMargin: "0% 0% -10% 0%" }
     )
 
     refs.forEach((ref) => {
       observer.observe(ref)
     })
 
-    return refs.forEach((ref) => ref.current && observer.unobserve(ref.current))
+    return () => observer.disconnect()
   })
 
   return (

@@ -1,8 +1,9 @@
 header {
-  height: 100vh;
+  min-height: 40vh;
   padding-top: 7rem;
-  overflow: hidden;
+  overflow: auto;
 }
+
 h5 {
   color: var(--color-light);
 }
@@ -13,7 +14,6 @@ h5 {
 
 .header__container {
   text-align: center;
-  height: 100%;
   position: relative;
   animation: anim4 1.5s forwards;
 }
@@ -76,9 +76,9 @@ h5 {
   background: linear-gradient(var(--color-primary), transparent);
   width: 22rem;
   height: 28rem;
-  position: absolute;
+  position: relative;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
   padding: 5rem 1.5rem 1.5rem 1.5rem;

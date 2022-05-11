@@ -6,45 +6,44 @@ import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 
+const data = [
+  {
+    name: "Aaron Tran",
+    linkedin: "https://www.linkedin.com/in/tran-aaron/",
+    picture: "kidAaron.jpeg",
+    testimonial:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ipsa cumque mollitia quam ipsam alias laboriosam vel, rem maxime nulla vitae quia magnam illo totam minus architecto, soluta quo ut?",
+  },
+  {
+    name: "Aaron Tran",
+    linkedin: "https://www.linkedin.com/in/tran-aaron/",
+    picture: "kidAaron.jpeg",
+    testimonial:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ipsa cumque mollitia quam ipsam alias laboriosam vel, rem maxime nulla vitae quia magnam illo totam minus architecto, soluta quo ut?",
+  },
+  {
+    name: "Aaron Tran",
+    linkedin: "https://www.linkedin.com/in/tran-aaron/",
+    picture: "kidAaron.jpeg",
+    testimonial:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ipsa cumque mollitia quam ipsam alias laboriosam vel, rem maxime nulla vitae quia magnam illo totam minus architecto, soluta quo ut?",
+  },
+  {
+    name: "Aaron Tran",
+    linkedin: "https://www.linkedin.com/in/tran-aaron/",
+    picture: "kidAaron.jpeg",
+    testimonial:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ipsa cumque mollitia quam ipsam alias laboriosam vel, rem maxime nulla vitae quia magnam illo totam minus architecto, soluta quo ut?",
+  },
+  {
+    name: "Aaron Tran",
+    linkedin: "https://www.linkedin.com/in/tran-aaron/",
+    picture: "kidAaron.jpeg",
+    testimonial:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ipsa cumque mollitia quam ipsam alias laboriosam vel, rem maxime nulla vitae quia magnam illo totam minus architecto, soluta quo ut?",
+  },
+]
 const Testimonial: React.FC<{}> = ({}) => {
-  const data = [
-    {
-      name: "Aaron Tran",
-      linkedin: "https://www.linkedin.com/in/tran-aaron/",
-      picture: "babyAaron.jpeg",
-      testimonial:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ipsa cumque mollitia quam ipsam alias laboriosam vel, rem maxime nulla vitae quia magnam illo totam minus architecto, soluta quo ut?",
-    },
-    {
-      name: "Aaron Tran",
-      linkedin: "https://www.linkedin.com/in/tran-aaron/",
-      picture: "babyAaron.jpeg",
-      testimonial:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ipsa cumque mollitia quam ipsam alias laboriosam vel, rem maxime nulla vitae quia magnam illo totam minus architecto, soluta quo ut?",
-    },
-    {
-      name: "Aaron Tran",
-      linkedin: "https://www.linkedin.com/in/tran-aaron/",
-      picture: "babyAaron.jpeg",
-      testimonial:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ipsa cumque mollitia quam ipsam alias laboriosam vel, rem maxime nulla vitae quia magnam illo totam minus architecto, soluta quo ut?",
-    },
-    {
-      name: "Aaron Tran",
-      linkedin: "https://www.linkedin.com/in/tran-aaron/",
-      picture: "babyAaron.jpeg",
-      testimonial:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ipsa cumque mollitia quam ipsam alias laboriosam vel, rem maxime nulla vitae quia magnam illo totam minus architecto, soluta quo ut?",
-    },
-    {
-      name: "Aaron Tran",
-      linkedin: "https://www.linkedin.com/in/tran-aaron/",
-      picture: "babyAaron.jpeg",
-      testimonial:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ipsa cumque mollitia quam ipsam alias laboriosam vel, rem maxime nulla vitae quia magnam illo totam minus architecto, soluta quo ut?",
-    },
-  ]
-
   return (
     <section id="testimonials" className={"testimonials"}>
       <h5>Review from Colleagues and Managers</h5>
