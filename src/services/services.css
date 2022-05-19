@@ -50,7 +50,7 @@
 
 .service__list li {
   display: grid;
-  grid-template-columns: 1fr 14fr;
+  grid-template-columns: 1fr 11fr;
   gap: 2rem;
   margin-bottom: 0.8rem;
 }
@@ -58,7 +58,6 @@
 .service__list-icon {
   color: var(--color-primary);
   margin-top: 0.3rem;
-  width: fit-content;
 }
 
 .service__list p {

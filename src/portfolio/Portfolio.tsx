@@ -12,20 +12,34 @@ interface Data {
 const data = [
   {
     id: 1,
+    video: "teslaClone.mp4",
+    title: "Tesla Clone App",
+    github: "https://github.com/AaronTran206/TelsaClone",
+    demo: "",
+  },
+  {
+    id: 2,
+    video: "mobileCatFactsApp.mp4",
+    title: "Mobile Cat Facts Applicataion",
+    github: "https://github.com/AaronTran206/mobileCatApp",
+    demo: "",
+  },
+  {
+    id: 3,
     video: "japaneseExt.mp4",
     title: "Japanese Dictionary Extension",
     github: "https://github.com/AaronTran206/japanese-extension",
     demo: "",
   },
   {
-    id: 2,
+    id: 4,
     video: "weatherExt.mp4",
     title: "Weather Extension",
     github: "https://github.com/AaronTran206/weather-extension",
     demo: "",
   },
   {
-    id: 3,
+    id: 5,
     video: "forkify.mp4",
     title: "Forkify App",
     github: "https://github.com/AaronTran206/forkify-app",

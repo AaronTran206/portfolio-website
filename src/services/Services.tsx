@@ -5,9 +5,12 @@ import { BsCheckLg } from "react-icons/bs"
 const frontendData = [
   { service: "JavaScript" },
   { service: "TypeScript" },
-  { service: "React" },
-  { service: "Material UI" },
+  { service: "React Native" },
+  { service: "ReactJS" },
+  { service: "Redux" },
   { service: "Bootstrap" },
+  { service: "Material UI" },
+  { service: "Sass" },
   { service: "HTML" },
   { service: "CSS" },
 ]
@@ -15,6 +18,8 @@ const backendData = [
   { service: "NodeJS" },
   { service: "Python" },
   { service: "Express" },
+  { service: "Firebase" },
+  { service: "Amazon Web Services" },
 ]
 
 const Services: React.FC<{}> = ({}) => {
