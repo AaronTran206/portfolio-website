@@ -52,10 +52,18 @@ h3,
 h4,
 h5 {
   font-weight: 500;
+  cursor: default;
+  user-select: none;
 }
 
 h1 {
   font-size: 2.5rem;
+}
+
+p,
+small {
+  cursor: default;
+  user-select: none;
 }
 
 section {

@@ -4,6 +4,10 @@
   transform: translateY(20%);
 }
 
+.testimonials__name {
+  color: var(--color-white);
+}
+
 .testimonials.appear {
   opacity: 1;
   transform: translate(0);

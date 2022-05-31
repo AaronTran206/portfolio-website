@@ -49,7 +49,7 @@ const Testimonial: React.FC<{}> = ({}) => {
                 <img src={user.picture} />
               </a>
             </div>
-            <h5>{user.name}</h5>
+            <h5 className="testimonials__name">{user.name}</h5>
             <small className="client__testimonial">{user.testimonial}</small>
           </SwiperSlide>
         ))}

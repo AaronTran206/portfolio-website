@@ -1,5 +1,6 @@
 import React from "react"
 import "./portfolio.css"
+import { BsCircleFill } from "react-icons/bs"
 
 interface Data {
   id: number
@@ -7,6 +8,7 @@ interface Data {
   title: string
   github: string
   demo: string
+  description: string[]
 }
 
 const data = [
@@ -16,6 +18,11 @@ const data = [
     title: "LoL In-House Team Randomizer",
     github: "https://github.com/AaronTran206/LoLTeamRandomizer",
     demo: "https://lolteamrandomizer.web.app/",
+    description: [
+      "Learned React Redux to persist player states that can be easily accessible by other components.",
+      "Learned Bootstrap and Sass to create a site that provides great user-experience and responsiveness.",
+      "Integrated other libraries for the first-time for greater user-experience such as: Toastify, and React-DnD.",
+    ],
   },
   {
     id: 2,
@@ -23,20 +30,34 @@ const data = [
     title: "Mobile Cat Facts Applicataion",
     github: "https://github.com/AaronTran206/mobileCatApp",
     demo: "",
+    description: [
+      "Learned React Native to create a small mobile application that fetches API data about cat facts.",
+      "Implemented React Navigation for the first time to include pagination within the app.",
+      "Experienced with React Native styling to make a more appealing design.",
+    ],
   },
   {
     id: 3,
-    video: "teslaClone.mp4",
-    title: "Tesla Clone App",
-    github: "https://github.com/AaronTran206/TelsaClone",
-    demo: "",
-  },
-  {
-    id: 4,
     video: "japaneseExt.mp4",
     title: "Japanese Dictionary Extension",
     github: "https://github.com/AaronTran206/japanese-extension",
     demo: "",
+    description: [
+      "First React project that I started and completed on my own.",
+      "Implemented own backend server with NodeJS and ExpressJS to host the database of Japanese words.",
+      "Experimented with card states and rendering behavior.",
+    ],
+  },
+  {
+    id: 4,
+    video: "teslaClone.mp4",
+    title: "Tesla Clone App",
+    github: "https://github.com/AaronTran206/TelsaClone",
+    demo: "",
+    description: [
+      "First React Native project that taught me the bare basics of mobile development.",
+      "Exposed to React Native styling syntax.",
+    ],
   },
   {
     id: 5,
@@ -44,6 +65,11 @@ const data = [
     title: "Weather Extension",
     github: "https://github.com/AaronTran206/weather-extension",
     demo: "",
+    description: [
+      "Learned React and TypeScript through this project.",
+      "Exposed to typing of TypeScript.",
+      "Exposed to component structure of React.",
+    ],
   },
   {
     id: 6,
@@ -51,6 +77,10 @@ const data = [
     title: "Forkify App",
     github: "https://github.com/AaronTran206/forkify-app",
     demo: "https://forkify-aaron-tran.netlify.app/",
+    description: [
+      "Project that taught me the basics of JavaScript.",
+      "Exposed to MVC structure of code and how it could benefit the overall scalability of bigger projects.",
+    ],
   },
 ]
 
@@ -68,7 +98,7 @@ const Portfolio: React.FC<{}> = ({}) => {
                 <source src={proj.video} type="video/mp4" />
               </video>
             </div>
-            <h3>{proj.title}</h3>
+            <h3 className="portfolio__item-title">{proj.title}</h3>
             <div className="portfolio__item-cta">
               <a href={proj.github} className="btn" target="_blank">
                 Github
@@ -81,6 +111,12 @@ const Portfolio: React.FC<{}> = ({}) => {
                 </a>
               )}
             </div>
+            {proj.description.map((str, i) => (
+              <div key={i} className="portfolio__item-description">
+                <BsCircleFill className="portfolio__item-bullet-icon" />
+                {str}
+              </div>
+            ))}
           </article>
         ))}
       </div>

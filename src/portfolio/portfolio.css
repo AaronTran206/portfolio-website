@@ -28,6 +28,11 @@
   background: transparent;
 }
 
+.portfolio__item-title {
+  cursor: default;
+  user-select: none;
+}
+
 .portfolio__item-video {
   border-radius: 1.5rem;
   overflow: hidden;
@@ -49,6 +54,24 @@
 
 .portfolio__item-cta a {
   margin-right: 1rem;
+}
+
+.portfolio__item-description {
+  margin-top: 0.6rem;
+  cursor: default;
+  user-select: none;
+}
+
+.portfolio__item-bullet-icon {
+  position: relative;
+  margin-right: 0.5rem;
+  font-size: 0.5rem;
+  align-self: center;
+  justify-self: center;
+  bottom: 0.1rem;
+  color: var(--color-primary);
+  cursor: default;
+  user-select: none;
 }
 
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) ============== */
