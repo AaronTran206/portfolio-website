@@ -43,7 +43,7 @@ const data = [
     github: "https://github.com/AaronTran206/japanese-extension",
     demo: "",
     description: [
-      "Japanese dictionary app that takes in an input, in English word, Japanese word, or a Japanese sentence, and returns the corresponding Japanese word from backend database.",
+      "Japanese dictionary app that takes in an input, an English word, a Japanese word, or a Japanese sentence, and returns the corresponding Japanese word from backend database.",
       "First React project that I started and completed on my own.",
       "Implemented own backend server with NodeJS and ExpressJS to host the database of Japanese words.",
     ],
@@ -55,7 +55,7 @@ const data = [
     github: "https://github.com/AaronTran206/TelsaClone",
     demo: "",
     description: [
-      "A clone of Tesla's app that has no functionality.",
+      "A clone of Tesla's app that doesn't contain any functionality.",
       "First React Native project that taught me the bare basics of mobile development.",
       "Exposed to React Native styling syntax.",
     ],
@@ -67,6 +67,7 @@ const data = [
     github: "https://github.com/AaronTran206/weather-extension",
     demo: "",
     description: [
+      "Google Extension app that shows weather data for cities that were input. Users can also set home cities which will provide better user experience and higher functionality.",
       "Learned React and TypeScript through this project.",
       "Learned about the process of making a Google Extension App using Chrome Developer Tools.",
     ],
@@ -78,6 +79,7 @@ const data = [
     github: "https://github.com/AaronTran206/forkify-app",
     demo: "https://forkify-aaron-tran.netlify.app/",
     description: [
+      "Recipe application where users can search for specific recipes. Users can also bookmark recipes and make their own recipes.",
       "Project that taught me the basics of JavaScript.",
       "Exposed to MVC structure of code and how it could benefit the overall scalability of bigger projects.",
     ],
