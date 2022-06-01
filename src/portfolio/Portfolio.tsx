@@ -27,7 +27,7 @@ const data = [
   {
     id: 2,
     video: "mobileCatFactsApp.mp4",
-    title: "Mobile Cat Facts Applicataion",
+    title: "Mobile Cat Facts Application",
     github: "https://github.com/AaronTran206/mobileCatApp",
     demo: "",
     description: [
