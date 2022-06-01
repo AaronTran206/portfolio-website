@@ -19,9 +19,9 @@ const data = [
     github: "https://github.com/AaronTran206/LoLTeamRandomizer",
     demo: "https://lolteamrandomizer.web.app/",
     description: [
+      "Site where League of Legends players can easily make in-house teams to play against each other in a serious setting or for fun with the included gamemodes and perks.",
       "Learned React Redux to persist player states that can be easily accessible by other components.",
-      "Learned Bootstrap and Sass to create a site that provides great user-experience and responsiveness.",
-      "Integrated other libraries for the first-time for greater user-experience such as: Toastify, and React-DnD.",
+      "Learned Bootstrap, Sass, Toastify, and React-DnD to create a site that provides great user-experience and responsiveness.",
     ],
   },
   {
@@ -31,9 +31,9 @@ const data = [
     github: "https://github.com/AaronTran206/mobileCatApp",
     demo: "",
     description: [
+      "Small mobile application that fetches cat facts from an API. Upon inputting a name, the user is transported to another screen where they are greeted and the cat fact is shown.",
       "Learned React Native to create a small mobile application that fetches API data about cat facts.",
-      "Implemented React Navigation for the first time to include pagination within the app.",
-      "Experienced with React Native styling to make a more appealing design.",
+      "Learned React Navigation to include pagination within the app.",
     ],
   },
   {
@@ -43,9 +43,9 @@ const data = [
     github: "https://github.com/AaronTran206/japanese-extension",
     demo: "",
     description: [
+      "Japanese dictionary app that takes in an input, in English word, Japanese word, or a Japanese sentence, and returns the corresponding Japanese word from backend database.",
       "First React project that I started and completed on my own.",
       "Implemented own backend server with NodeJS and ExpressJS to host the database of Japanese words.",
-      "Experimented with card states and rendering behavior.",
     ],
   },
   {
@@ -55,6 +55,7 @@ const data = [
     github: "https://github.com/AaronTran206/TelsaClone",
     demo: "",
     description: [
+      "A clone of Tesla's app that has no functionality.",
       "First React Native project that taught me the bare basics of mobile development.",
       "Exposed to React Native styling syntax.",
     ],
@@ -67,8 +68,7 @@ const data = [
     demo: "",
     description: [
       "Learned React and TypeScript through this project.",
-      "Exposed to typing of TypeScript.",
-      "Exposed to component structure of React.",
+      "Learned about the process of making a Google Extension App using Chrome Developer Tools.",
     ],
   },
   {
