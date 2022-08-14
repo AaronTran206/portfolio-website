@@ -14,6 +14,19 @@ interface Data {
 const data = [
   {
     id: 1,
+    video: "mern-finance-social.mp4",
+    title: "MERN Finance Social App",
+    github: "https://github.com/AaronTran206/MERN-finance-social-media-site",
+    demo: "https://mern-financial-social-media.web.app/",
+    description: [
+      "Social media site where people can search tickers and post about their financial opinions!",
+      "I built this project to further my knowledge of MongoDB, Express, Node, and Material UI. Learning about authentication and backend querying was a big task of this project. In particular, the nested comment structure that maintained reply, edit, delete, and like functionality was challenging.",
+      "Technologies used include MongoDB, Express, React, Node, MUI, React Navigation, React-Redux, and React Charts.",
+    ],
+  },
+
+  {
+    id: 2,
     video: "lolteamrandomizer.mov",
     title: "LoL In-House Team Randomizer",
     github: "https://github.com/AaronTran206/LoLTeamRandomizer",
@@ -22,18 +35,6 @@ const data = [
       "Site where League of Legends players can easily make in-house teams to play against each other in a serious setting or for fun with the included gamemodes and perks.",
       "Learned React Redux to persist player states that can be easily accessible by other components.",
       "Learned Bootstrap, Sass, Toastify, and React-DnD to create a site that provides great user-experience and responsiveness.",
-    ],
-  },
-  {
-    id: 2,
-    video: "mobileCatFactsApp.mp4",
-    title: "Mobile Cat Facts Application",
-    github: "https://github.com/AaronTran206/mobileCatApp",
-    demo: "",
-    description: [
-      "Small mobile application that fetches cat facts from an API. Upon inputting a name, the user is transported to another screen where they are greeted and the cat fact is shown.",
-      "Learned React Native to create a small mobile application that fetches API data about cat facts.",
-      "Learned React Navigation to include pagination within the app.",
     ],
   },
   {
@@ -70,18 +71,6 @@ const data = [
       "Google Extension app that shows weather data for cities that were input. Users can also set home cities which will provide better user experience and higher functionality.",
       "Learned React and TypeScript through this project.",
       "Learned about the process of making a Google Extension App using Chrome Developer Tools.",
-    ],
-  },
-  {
-    id: 6,
-    video: "forkify.mp4",
-    title: "Forkify App",
-    github: "https://github.com/AaronTran206/forkify-app",
-    demo: "https://forkify-aaron-tran.netlify.app/",
-    description: [
-      "Recipe application where users can search for specific recipes. Users can also bookmark recipes and make their own recipes.",
-      "Project that taught me the basics of JavaScript.",
-      "Exposed to MVC structure of code and how it could benefit the overall scalability of bigger projects.",
     ],
   },
 ]
