@@ -13,13 +13,13 @@ const frontendData = [
   { service: "Sass" },
   { service: "HTML" },
   { service: "CSS" },
+  { service: "React Navigation" },
 ]
 const backendData = [
   { service: "NodeJS" },
-  { service: "Python" },
   { service: "Express" },
+  { service: "MongoDB" },
   { service: "Firebase" },
-  { service: "Amazon Web Services" },
 ]
 
 const Services: React.FC<{}> = ({}) => {
