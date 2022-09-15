@@ -39,7 +39,7 @@ const Nav: React.FC<{}> = ({}) => {
         //root property defaults to the browser viewport
         //intersection ratio (0% of section must be visible)
       },
-      { threshold: 0 }
+      { rootMargin: "50% 0px 0px 0px" }
     )
 
     refs.forEach((ref) => {

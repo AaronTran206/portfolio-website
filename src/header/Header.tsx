@@ -23,7 +23,7 @@ const Header: React.FC<{}> = ({}) => {
       <div className="container header__container">
         <h5 className="header__text">Hello I'm</h5>
         <h1 className="header__text">Aaron Tran</h1>
-        <h5 className="header__text">Fullstack Developer</h5>
+        <h5 className="header__text">Software Engineer</h5>
         <CTA />
         <HeaderSocials />
 
