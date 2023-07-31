@@ -1,9 +1,11 @@
 import React from "react"
 import "./experience.css"
 import { BsCircleFill } from "react-icons/bs"
+import { FiExternalLink } from "react-icons/fi"
 
 interface Experiences {
   company: string
+  title: string
   companyURL: string
   date: string
   highlights: string[]
@@ -12,6 +14,7 @@ interface Experiences {
 const experiences: Experiences[] = [
   {
     company: "Anduril",
+    title: "Software Engineer",
     companyURL: "https://www.anduril.com/",
     date: "04/2023 - 07/2023",
     highlights: [
@@ -22,11 +25,24 @@ const experiences: Experiences[] = [
   },
   {
     company: "Neatleaf",
+    title: "Software Engineer",
     companyURL: "https://neatleaf.com/",
     date: "08/2022 - 03/2023",
     highlights: [
       "Implemented new pages and features for the various products. This included a live video streaming service as well as creating a configuration auto-formatting page that took in code and sent to the backend.",
       "Thoroughly tested and researched mulitple charting libraries before making a decision on the future charting technology the company would use.",
+    ],
+  },
+  {
+    company: "US Speedskating",
+    title: "Team USA Olympic Athlete",
+    companyURL: "https://www.usspeedskating.org/",
+    date: "03/2015 - 03/2021",
+    highlights: [
+      "Set my sights from a young age to accomplish my dream of, not just going, but competing in the Olympic Games for Short Track Speed Skating; which I managed to accomplish in 2018 in Pyeongchang, Korea.",
+      "Worked with extraordinary teammates and coaches to become the best version of ourselves that we could be by focusing on collaboration, teamwork, and sacrifice.",
+      "I believe no other experience would have given me the emotional, mental, and physical that I have today.",
+      `I now apply the philosophy of "playing to win", rather than "playing not to lose", to everything I do.`,
     ],
   },
 ]
@@ -41,16 +57,19 @@ const Experience: React.FC = () => {
         {experiences.map((exp) => (
           <div className="experience__item">
             <div className="experience__head">
-              <h3>
-                <a
-                  className="experience__anchor"
-                  href={exp.companyURL}
-                  target="_blank"
-                >
-                  {exp.company}
+              <div>
+                <h3>{exp.company}</h3>
+                <a href={exp.companyURL} target="_blank">
+                  <h5 className="experience__external-site">
+                    Visit company site{" "}
+                    <FiExternalLink className="experience__external-link-icon" />
+                  </h5>
                 </a>
-              </h3>
-              <h5>{exp.date}</h5>
+              </div>
+              <div className="experience__title">
+                <h3>{exp.title}</h3>
+                <h5>{exp.date}</h5>
+              </div>
             </div>
 
             <ul className="experience__list">

@@ -37,13 +37,15 @@ const About: React.FC<{}> = ({}) => {
             </article>
           </div>
           <p className="about__content">
-            My experience as an Olympic-level athlete allowed me to gain strong
-            interpersonal communication and goal-setting skills when working
-            with some of the brightest and most dedicated people in the country;
-            which also allows me to thrive in a professional environment.
-            However, I also believe that life is too short. I believe that it is
-            just as important to "stop and smell the roses" as it is to spend
-            time honing your craft.
+            My drive and dedication while I was an Olympic-level athlete is now
+            directed towards my passion for software engineering. My technical
+            and collaboration skills have reached new heights throughout my
+            professional positions as a software engineer. I intend to continue
+            to aim towards the pinnacle of software development as I eagerly
+            absorb as much information as I can from others and available
+            resources everyday! I am excited to work with the brightest
+            engineers and business owners I can. Reach out if you're interested
+            in chatting!
           </p>
 
           <a href="#contact" className="btn btn-primary">
