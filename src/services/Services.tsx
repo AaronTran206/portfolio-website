@@ -4,21 +4,21 @@ import { BsCheckLg } from "react-icons/bs"
 
 const frontendData = [
   { service: "TypeScript" },
-  { service: "React Native" },
   { service: "ReactJS" },
-  { service: "Redux" },
-  { service: "Bootstrap" },
-  { service: "Sass" },
   { service: "HTML" },
   { service: "CSS" },
+  { service: "Redux" },
+  { service: "Sass" },
+  { service: "Bootstrap" },
+  { service: "React Native" },
 ]
 const backendData = [
-  { service: "Python" },
   { service: "NodeJS" },
   { service: "Express" },
   { service: "MongoDB" },
   { service: "GraphQL" },
   { service: "SQL" },
+  { service: "Python" },
 ]
 
 const Services: React.FC<{}> = ({}) => {
