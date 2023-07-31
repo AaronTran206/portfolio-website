@@ -7,7 +7,6 @@
   opacity: 1;
   transform: translateY(0);
 }
-
 .experience__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -26,12 +25,10 @@
   box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
   transition: var(--transition);
 }
-
 .experience__title {
   text-align: end;
   color: var(--color-bg-variant);
 }
-
 .experience__head h3,
 .experience__head h5 {
   color: var(--color-bg);
@@ -49,15 +46,24 @@
   background: transparent;
 }
 
-.experience__external-site {
+.experience__company {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.experience__anchor {
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  text-align: start;
   gap: 5px;
   color: var(--color-bg-variant);
   transition: var(--transition);
 }
-
-.experience__external-site:hover {
+.experience__anchor h3 {
+  transition: var(--transition);
+}
+.experience__anchor:hover h3 {
   cursor: pointer;
   color: var(--color-white);
   transition: var(--transition);
@@ -66,13 +72,11 @@
 .experience__list {
   padding: 0.5rem 0;
 }
-
 .experience__list li {
   display: grid;
   grid-template-columns: 1fr 15fr;
   padding: 0.5rem 1.3rem;
 }
-
 .experience__list-icon {
   display: flex;
   flex-direction: row;

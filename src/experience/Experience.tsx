@@ -57,18 +57,20 @@ const Experience: React.FC = () => {
         {experiences.map((exp) => (
           <div className="experience__item">
             <div className="experience__head">
-              <div>
-                <h3>{exp.company}</h3>
-                <a href={exp.companyURL} target="_blank">
-                  <h5 className="experience__external-site">
-                    Visit company site
-                    <FiExternalLink className="experience__external-link-icon" />
-                  </h5>
+              <div className="experience__company">
+                <a
+                  href={exp.companyURL}
+                  target="_blank"
+                  className="experience__anchor"
+                >
+                  <h3>{exp.company}</h3>
+                  <FiExternalLink />
                 </a>
+                <h5>{exp.date}</h5>
               </div>
+
               <div className="experience__title">
                 <h3>{exp.title}</h3>
-                <h5>{exp.date}</h5>
               </div>
             </div>
 
