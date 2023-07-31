@@ -8,6 +8,12 @@ import "swiper/css/pagination"
 
 const data = [
   {
+    name: "Seung Park",
+    linkedin: "https://www.linkedin.com/in/seungquality/",
+    picture: "seungPark.jpg",
+    testimonial: `"Aaron has proven to be an enthusiastic and proficient UI engineer. He quickly integrated with our team’s map tooling and overhauled the editing workflows for our users. I highly recommend Aaron as an engineer because of his problem solving capability and passion for UI."`,
+  },
+  {
     name: "Karen Ocwieja",
     linkedin: "https://www.linkedin.com/in/karen-ocwieja-57bb77119/",
     picture: "karenOcwieja.jpg",

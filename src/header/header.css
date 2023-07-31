@@ -1,7 +1,7 @@
 header {
   min-height: 100vh;
-  padding-top: 7rem;
-  overflow: auto;
+  padding-top: 5rem;
+  height: auto;
 }
 
 h5 {
@@ -84,6 +84,7 @@ h5 {
   /* padding: 5rem 1.5rem 1.5rem 1.5rem; */
   overflow: hidden;
   animation: anim2 2s forwards;
+  user-select: none;
 }
 
 .me img {
@@ -133,14 +134,14 @@ h5 {
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) ============== */
 @media screen and (max-width: 1024px) {
   header {
-    height: 90vh;
+    min-height: 90vh;
   }
 }
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ============== */
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .header__socials,
