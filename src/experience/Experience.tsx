@@ -41,7 +41,7 @@ const experiences: Experiences[] = [
     highlights: [
       "Set my sights from a young age to accomplish my dream of, not just going, but competing in the Olympic Games for Short Track Speed Skating; which I managed to accomplish in 2018 in Pyeongchang, Korea.",
       "Worked with extraordinary teammates and coaches to become the best version of ourselves that we could be by focusing on collaboration, teamwork, and sacrifice.",
-      "I believe no other experience would have given me the emotional, mental, and physical that I have today.",
+      "I believe no other experience would have given me the emotional, mental, and physical fortitude that I have today.",
       `I now apply the philosophy of "playing to win", rather than "playing not to lose", to everything I do.`,
     ],
   },
