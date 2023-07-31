@@ -20,11 +20,13 @@ import HeaderSocials from "./HeaderSocials"
 const Header: React.FC<{}> = ({}) => {
   return (
     <header>
-      <div className="container header__container">
-        <h5 className="header__text">Hello I'm</h5>
-        <h1 className="header__text">Aaron Tran</h1>
-        <h5 className="header__text">Software Engineer</h5>
-        <CTA />
+      <div className="container">
+        <div className="header__container">
+          <h5 className="header__text">Hello I'm</h5>
+          <h1 className="header__text">Aaron Tran</h1>
+          <h5 className="header__text">Software Engineer</h5>
+          <CTA />
+        </div>
         <HeaderSocials />
 
         <div className="me">

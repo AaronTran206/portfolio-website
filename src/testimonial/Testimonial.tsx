@@ -39,17 +39,14 @@ const Testimonial: React.FC<{}> = ({}) => {
       <h5>Review from Colleagues and Managers</h5>
       <h2>Testimonials</h2>
       <Swiper
-        cssMode={true}
         navigation={true}
         pagination={true}
-        mousewheel={true}
-        keyboard={true}
         spaceBetween={25}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        modules={[Navigation, Pagination]}
         className="container testimonials__container"
       >
-        {data.map((user, i) => (
-          <SwiperSlide className="testimonials-swiper" key={i}>
+        {data.map((user) => (
+          <SwiperSlide className="testimonials-swiper" key={user.linkedin}>
             <div className="client__avatar">
               <a href={user.linkedin} target="_blank">
                 <img src={user.picture} />

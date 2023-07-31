@@ -55,7 +55,7 @@ const Experience: React.FC = () => {
 
       <div className="container experience__container">
         {experiences.map((exp) => (
-          <div className="experience__item">
+          <article className="experience__item">
             <div className="experience__head">
               <div className="experience__company">
                 <a
@@ -70,7 +70,10 @@ const Experience: React.FC = () => {
               </div>
 
               <div className="experience__title">
-                <h3>{exp.title}</h3>
+                <h3>
+                  {exp.title}
+                  <div className="experience__title-divider" />
+                </h3>
               </div>
             </div>
 
@@ -82,7 +85,7 @@ const Experience: React.FC = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </article>
         ))}
       </div>
     </section>
