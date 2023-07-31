@@ -28,7 +28,7 @@ const About: React.FC<{}> = ({}) => {
             <article className="about__card">
               <MdPets className="about__icon" />
               <h5>Loves</h5>
-              <small>Animals</small>
+              <small>Pets</small>
             </article>
             <article className="about__card">
               <FaVolleyballBall className="about__icon" />

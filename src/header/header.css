@@ -140,6 +140,11 @@ h5 {
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ============== */
 @media screen and (max-width: 600px) {
+  .me {
+    width: 22rem;
+    height: 22rem;
+  }
+
   header {
     min-height: 100vh;
   }
