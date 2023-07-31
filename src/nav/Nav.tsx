@@ -59,7 +59,7 @@ const Nav: React.FC<{}> = ({}) => {
         href="#experience"
         className={activeNav === "#experience" ? "active" : ""}
       >
-        <PiWrench />
+        <HiOutlineBriefcase />
       </a>
       <a
         href="#portfolio"
@@ -68,7 +68,7 @@ const Nav: React.FC<{}> = ({}) => {
         <HiOutlineBookOpen />
       </a>
       <a href="#services" className={activeNav === "#services" ? "active" : ""}>
-        <HiOutlineBriefcase />
+        <PiWrench />
       </a>
       <a href="#about" className={activeNav === "#about" ? "active" : ""}>
         <HiOutlineUser />
