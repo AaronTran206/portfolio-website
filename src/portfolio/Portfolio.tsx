@@ -19,9 +19,8 @@ const data = [
     github: "https://github.com/AaronTran206/MERN-finance-social-media-site",
     demo: "https://mern-financial-social-media.web.app/",
     description: [
-      "Social media site where people can search tickers and post about their financial opinions!",
-      "I built this project to further my knowledge of MongoDB, Express, Node, and Material UI. Learning about authentication and backend querying was a big task of this project. In particular, the nested comment structure that maintained reply, edit, delete, and like functionality was challenging.",
-      "Technologies used include MongoDB, Express, React, Node, MUI, React Navigation, React-Redux, and React Charts.",
+      "Used the MERN stack in combination with Material UI to build a Social media site where people can search tickers and post about their financial opinions!",
+      "Other notable technologies used include React Navigation, React-Redux, and React Charts.",
     ],
   },
 
@@ -32,9 +31,8 @@ const data = [
     github: "https://github.com/AaronTran206/LoLTeamRandomizer",
     demo: "https://lolteamrandomizer.web.app/",
     description: [
-      "Site where League of Legends players can easily make in-house teams to play against each other in a serious setting or for fun with the included gamemodes and perks.",
-      "Learned React Redux to persist player states that can be easily accessible by other components.",
-      "Learned Bootstrap, Sass, Toastify, and React-DnD to create a site that provides great user-experience and responsiveness.",
+      "Used to React Redux, Bootstrap, and Sass to make a better alternative for my friends and I to randomize team matches.",
+      "Added in extra features such as drag-and-drop, and custom gamemodes to support interesting and unique game nights.",
     ],
   },
   {
@@ -44,8 +42,7 @@ const data = [
     github: "https://github.com/AaronTran206/japanese-extension",
     demo: "",
     description: [
-      "Japanese dictionary app that takes in an input, an English word, a Japanese word, or a Japanese sentence, and returns the corresponding Japanese word from backend database.",
-      "First React project that I started and completed on my own.",
+      "Used React, and Typescript to create the frontend for a Japanese dictionary app that takes in an input, an English word, a Japanese word, or a Japanese sentence, and returns the corresponding Japanese word from backend database.",
       "Implemented own backend server with NodeJS and ExpressJS to host the database of Japanese words.",
     ],
   },
@@ -55,11 +52,7 @@ const data = [
     title: "Tesla Clone App",
     github: "https://github.com/AaronTran206/TelsaClone",
     demo: "",
-    description: [
-      "A clone of Tesla's app that doesn't contain any functionality.",
-      "First React Native project that taught me the bare basics of mobile development.",
-      "Exposed to React Native styling syntax.",
-    ],
+    description: ["Used React Native to create a copy of Tesla's mobile app."],
   },
   {
     id: 5,
@@ -68,9 +61,7 @@ const data = [
     github: "https://github.com/AaronTran206/weather-extension",
     demo: "",
     description: [
-      "Google Extension app that shows weather data for cities that were input. Users can also set home cities which will provide better user experience and higher functionality.",
-      "Learned React and TypeScript through this project.",
-      "Learned about the process of making a Google Extension App using Chrome Developer Tools.",
+      "Used React and Typescript to make a Google Extension app that shows weather data for cities that were input. Users can also set home cities which will provide better user experience and higher functionality.",
     ],
   },
 ]
@@ -94,9 +85,7 @@ const Portfolio: React.FC<{}> = ({}) => {
               <a href={proj.github} className="btn" target="_blank">
                 Github
               </a>
-              {proj.demo === "" ? (
-                ""
-              ) : (
+              {proj.demo && (
                 <a href={proj.demo} className="btn btn-primary" target="_blank">
                   Live Demo
                 </a>

@@ -11,18 +11,23 @@
 }
 
 :root {
-  --color-bg: #10263b;
-  --color-bg-variant: #29537a;
-  --color-primary: #27faef;
-  --color-primary-variant: rgb(60, 146, 207);
+  --color-bg: #032b36;
+  --color-bg-variant: #134b59;
+  --color-primary: #20e3d7;
+  --color-primary-variant: #84d9d4;
   --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.548);
+  --color-light: rgba(255, 255, 255, 0.7);
 
   --transition: all 600ms ease;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-primary) !important;
 }
 
 html {

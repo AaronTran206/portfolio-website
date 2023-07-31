@@ -19,7 +19,8 @@ const backendData = [
   { service: "NodeJS" },
   { service: "Express" },
   { service: "MongoDB" },
-  { service: "Firebase" },
+  { service: "GraphQL" },
+  { service: "SQL" },
 ]
 
 const Services: React.FC<{}> = ({}) => {
