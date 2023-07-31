@@ -11,7 +11,7 @@ interface Data {
   description: string[]
 }
 
-const data = [
+const data: Data[] = [
   {
     id: 1,
     video: "mern-finance-social.mp4",
@@ -73,7 +73,7 @@ const Portfolio: React.FC<{}> = ({}) => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map((proj: Data) => (
+        {data.map((proj) => (
           <article className="portfolio__item" key={proj.id}>
             <div className="portfolio__item-video">
               <video controls muted>

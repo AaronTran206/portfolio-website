@@ -3,19 +3,17 @@ import "./services.css"
 import { BsCheckLg } from "react-icons/bs"
 
 const frontendData = [
-  { service: "JavaScript" },
   { service: "TypeScript" },
   { service: "React Native" },
   { service: "ReactJS" },
   { service: "Redux" },
   { service: "Bootstrap" },
-  { service: "Material UI" },
   { service: "Sass" },
   { service: "HTML" },
   { service: "CSS" },
-  { service: "React Navigation" },
 ]
 const backendData = [
+  { service: "Python" },
   { service: "NodeJS" },
   { service: "Express" },
   { service: "MongoDB" },

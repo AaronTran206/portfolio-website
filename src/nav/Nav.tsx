@@ -56,16 +56,16 @@ const Nav: React.FC<{}> = ({}) => {
         <HiOutlineHome />
       </a>
       <a
-        href="#portfolio"
-        className={activeNav === "#portfolio" ? "active" : ""}
-      >
-        <HiOutlineBookOpen />
-      </a>
-      <a
         href="#experience"
         className={activeNav === "#experience" ? "active" : ""}
       >
         <PiWrench />
+      </a>
+      <a
+        href="#portfolio"
+        className={activeNav === "#portfolio" ? "active" : ""}
+      >
+        <HiOutlineBookOpen />
       </a>
       <a href="#services" className={activeNav === "#services" ? "active" : ""}>
         <HiOutlineBriefcase />
