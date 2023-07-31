@@ -61,7 +61,7 @@ const Experience: React.FC = () => {
                 <h3>{exp.company}</h3>
                 <a href={exp.companyURL} target="_blank">
                   <h5 className="experience__external-site">
-                    Visit company site{" "}
+                    Visit company site
                     <FiExternalLink className="experience__external-link-icon" />
                   </h5>
                 </a>

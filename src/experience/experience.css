@@ -27,7 +27,8 @@
   transition: var(--transition);
 }
 
-.experience__title h2 {
+.experience__title {
+  text-align: end;
   color: var(--color-bg-variant);
 }
 
@@ -92,5 +93,13 @@
   .experience__container {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .experience__external-site {
+    gap: 0;
+  }
+
+  .experience__head {
+    gap: 15px;
   }
 }
